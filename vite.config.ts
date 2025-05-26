@@ -11,7 +11,7 @@ export default defineConfig(() => ({
     banner({
       content: `/**${Object.entries(config).map(
         (value) => `\n * @${value[0]} ${value[1]}`
-      )}\n */`,
+      ).join('')}\n */`,
       outDir: OUT_DIR,
     }),
   ],
